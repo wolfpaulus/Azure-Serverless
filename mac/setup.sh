@@ -5,9 +5,8 @@ STORAGE_ACC="safuncapp0043"    # globally unique, lowercase alphanumeric, betwee
 REGION="eastus"                # to list possible locations, exec. `az account list-locations` 
 FUNCTION_NAME="func0043"       # globally unique, alphanumeric characters and hyphens, cannot start or end in a hyphen, and must be less than 64 chars.
 AZURE_SUB="Azure for Students" # subscription name or id
-
-GITHUB_REPO="wolf-edu/az_py_func"
-GITHUB_TOKEN="ghp_..."
+GITHUB_REPO="wolf-edu/az_py_func"  # GitHub repo in format "owner/repo"
+GITHUB_TOKEN="ghp_..."         # GitHub personal access token
 
 az login
 
