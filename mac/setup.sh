@@ -36,7 +36,7 @@ az functionapp create\
 az functionapp config appsettings set\
  -n "${FUNCTION_NAME}"\
  -g "${RESOURCE_GRP}"\
- --settings "AzureWebJobsFeatureFlags=EnableWorkerIndexing"\
+ --settings "AzureWebJobsFeatureFlags=EnableWorkerIndexing AzureWebJobsDisableHomepage=true"\
  --subscription "${AZURE_SUB}"
 
 az functionapp deployment github-actions add\
