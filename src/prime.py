@@ -24,7 +24,7 @@ def is_prime(k:  int) -> Tuple[bool, str]:
 def n_primes(n: int) -> List[int]:
     """
     Return a list of the first n primes.
-    ! maintains a list of primes found so far
+    Maintains a list of primes found so far
     """
     if n < 1:
         return []
