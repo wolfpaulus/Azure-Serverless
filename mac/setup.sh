@@ -73,7 +73,7 @@ fi
 echo
 
 echo
-echo "Step 4: === Configuring the application setting for $FUNCTION_NAME ==="
+echo "Step 4: === Configuring the application setting for ${FUNCTION_NAME} ==="
 read -p 'Do you want to execute this step? [y/n]: ' -n1 var
 echo
 if [ "$var" = 'y' ]; then
@@ -87,7 +87,7 @@ fi
 echo
 
 echo
-echo "Step 5: === Deploying the github actions for $FUNCTION_NAME ==="
+echo "Step 5: === Deploying the github actions for ${FUNCTION_NAME} ==="
 read -p 'Do you want to execute this step? [y/n]: ' -n1 var
 echo
 if [ "$var" = 'y' ]; then

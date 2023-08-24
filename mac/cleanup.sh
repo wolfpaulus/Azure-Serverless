@@ -7,6 +7,7 @@ RESOURCE_GRP="..."               # alphanumeric, underscore, parentheses, hyphen
 AZURE_SUB="Azure for Students"   # Azure subscription name
 
 echo
+echo "Deleting the Resource Group and all its resosurces, this will take a few minutes"
 read -p "Do you want to start the removal process? [y/n]: " -n1 var
 [ ! "$var" = y ] && echo && exit 0
 echo
@@ -15,6 +16,4 @@ if [ "$var" = 'y' ]; then
     az login
 fi
 echo
-
-# Delete the Resource Group and all its resosurces, this will take a few minutes
 az group delete -n "${RESOURCE_GRP}" --subscription "${AZURE_SUB}"
